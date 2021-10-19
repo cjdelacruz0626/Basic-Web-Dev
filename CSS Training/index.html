@@ -4,49 +4,121 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Animation</title>
+  <title>CSS Animation, Bootstrap</title>
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rampart+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="rot">
-    <h1 class="wild">Life in the Wild</h1>
-  </div>
 
-  <div class="container">
-    <img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg" alt="">
-    <img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg" alt="">
-    <img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg" alt="">
-    <img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg" alt="">
-    <img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg" alt="">
-    <img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="">
-  </div>
-
-  <!-- Robot Section -->
-  <!-- <h1 class="robot">Robot Friend</h1> -->
-  <div class="robots">
-    <div class="android">
-
-      <div class="head">
-        <div class="eyes">
-          <div class="left_eye"></div>
-          <div class="right_eye"></div>
+  <div class="container d-flex align-items-center h-100">
+    <div class="row">
+      <header class="text-center col-12">
+        <h1>CSANKJCHQIDAIOWDHJASHD KJDASHDKAGSDASD</h1>
+      </header>
+      <section class="text-center col-12">
+        <div class="button-container">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch Robot
+          </button>
+          <!-- Button trigger 2 modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#wild">
+            Launch Album
+          </button>
         </div>
-      </div>
-
-      <div class="upper_body">
-        <div class="left_arm"></div>
-        <div class="torso"></div>
-        <div class="right_arm"></div>
-      </div>
-
-      <div class="lower_body">
-        <div class="left_leg"></div>
-        <div class="right_leg"></div>
-      </div>
-
+      </section>
     </div>
   </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Hello! I'm PAMAMOK, Your Bestfriend</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Robot Section -->
+          <!-- <h1 class="robot">Robot Friend</h1> -->
+          <div class="robots">
+            <div class="android">
+
+              <div class="head">
+                <div class="eyes">
+                  <div class="left_eye"></div>
+                  <div class="right_eye"></div>
+                </div>
+              </div>
+
+              <div class="upper_body">
+                <div class="left_arm"></div>
+                <div class="torso"></div>
+                <div class="right_arm"></div>
+              </div>
+
+              <div class="lower_body">
+                <div class="left_leg"></div>
+                <div class="right_leg"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="wild" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Life in the Wild</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Life in the wild -->
+          <div class="rot">
+            <h1 class="wild">Life in the Wild</h1>
+          </div>
+
+          <div class="img-container">
+            <img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg" alt="">
+            <img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg" alt="">
+            <img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg" alt="">
+            <img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg" alt="">
+            <img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg" alt="">
+            <img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
