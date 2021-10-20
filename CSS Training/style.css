@@ -180,10 +180,16 @@ img:hover {
     left: 120px;
 }
 
-.button-container {
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* .button-container {
     display: flex;
     justify-content: center;
-}
+} */
 
 .button-container>button {
     text-transform: uppercase;
