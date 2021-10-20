@@ -22,9 +22,19 @@ const peoples = [
   
   const promptUserName = prompt("What is your username?");
   const promptPassword = prompt("What is your password?");
+
+  function isUserValid(user, passwod) {
+    for (let index = 0; index < peoples.length; index++) {
+        
+        if(peoples[index].username === user && peoples[index].password === password) {
+            return true;
+        }
+    }
+    return false;
+  }
   
-  function signIn(user, password) {
-    if(user === peoples[0].username && password === peoples[0].password) {
+  function signIn(user, password) {    
+    if(isUserValid(user, password)) {
       console.log(newsFeed);
     } else {
       alert("Sorry, Wrong password ka");
