@@ -1,18 +1,43 @@
-//Advance Array
+//Advance Object
 
-const array = [1, 2, 3, 4, 5];
+//Reference type
+const object1 = { value: 10};
+const object2 = object1;
+const object3 = { value: 10};
 
-//Map
-console.log(array.map((num) => num * 2 ));
+console.log(object1 === object3);
+
+//Context
+const object4 = {
+    a: function () {
+        console.log(this);
+    }
+}
 
 
-//Filter
-console.log(array.filter(num => num >= 1));
+//Instantiation 
+class Player {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+    
+    introduce() {
+        console.log(`Hello, I am ${this.name}, I'm a ${this.type}`);
+    }
+}
 
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type);
+    }
 
-//Reduce
-console.log(array.reduce((acc, num) => {
-    return acc + num;
-}, 5));
+    play() {
+        console.log(`Wow, I'm a ${this.type}`);
+    }
+}
 
+const wizard1 = new Wizard('Jenny', 'Healer');
+const wizard2 = new Wizard('CJ', 'Healer');
 
+console.log(wizard2.introduce());
