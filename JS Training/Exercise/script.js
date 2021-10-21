@@ -1,27 +1,18 @@
-// closure
+//Advance Array
 
-const first = () => {
-    const greet = 'hi';
-    const second = () => {
-        const name = "Dougy";
-        console.log(greet);
-    }
+const array = [1, 2, 3, 4, 5];
 
-    return second;
-}
+//Map
+console.log(array.map((num) => num * 2 ));
 
-const newFunc = first();
-console.log(newFunc());
 
-//Currying
-const curriedMultyiply = (a) => (b) => a * b;
-const multiply = curriedMultyiply(5)(8);
+//Filter
+console.log(array.filter(num => num >= 1));
 
-console.log(multiply);
 
-//Compose
-const compose = (f, g) => (a) => f(g(a));
-const sum = (num) => num + 1;
-const sub = (num) => num - 1;
+//Reduce
+console.log(array.reduce((acc, num) => {
+    return acc + num;
+}, 5));
 
-console.log(compose(sum, sub)(5));
+
