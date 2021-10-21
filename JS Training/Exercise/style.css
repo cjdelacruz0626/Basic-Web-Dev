@@ -1,0 +1,22 @@
+.coolTitle {
+    text-align: center;
+    color: blueviolet;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+li {
+    cursor: pointer;
+}
+
+.custBtn {
+    color: firebrick;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: none;
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
